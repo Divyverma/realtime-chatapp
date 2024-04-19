@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useForm } from 'react-hook-form'
 import { useRouter } from 'next/navigation'
 import { signIn } from 'next-auth/react'
+import toast from "react-hot-toast";
 
 
 
@@ -55,7 +56,7 @@ const Form = ({ type }) => {
         <div className='auth'>
             <div className='content'>
                 <img
-                    src='assets/logo.png' alt='logo' className='logo' />
+                    src='assets/guft-gu.png' alt='logo' className='logo' />
 
                 <form className='form' onSubmit={handleSubmit(onSubmit)}>
                     {type === 'register' && (
