@@ -1,7 +1,8 @@
 "use client";
 
+
 import Loader from "@component/Loader";
-import { PersonOutline } from "@material-ui/icons";
+import { PersonOutline } from "@mui/icons-material";
 import { useSession } from "next-auth/react";
 import { CldUploadButton } from "next-cloudinary";
 import React, { useEffect, useState } from "react";
@@ -55,7 +56,7 @@ const Profile = () => {
   };
 
   return loading ? (
-    <Loader />
+    <Loader/>
   ) : (
     <div className="profile-page">
       <h1 className="text-heading3-bold">Edit Your Profile</h1>
@@ -93,7 +94,7 @@ const Profile = () => {
           />
           <CldUploadButton
             options={{ maxFiles: 1 }}
-            onSuccess={uploadPhoto}
+            onUpload={uploadPhoto}
             uploadPreset="ocd5bm3u"
           >
             <p className="text-body-bold">Upload new photo</p>

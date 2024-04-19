@@ -3,7 +3,7 @@ import { connectToDB } from "@mongodb";
 
 export const POST = async (req, { params }) => {
   try {
-    await connectToDB()
+    await connectToDB();
 
     const { userId } = params;
 
