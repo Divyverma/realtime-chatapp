@@ -27,6 +27,7 @@ const ChatPage = () => {
     }
   }
 
+  
   useEffect(() => {
     if (currentUser && chatId) seenMessages();
   }, [currentUser, chatId]);
