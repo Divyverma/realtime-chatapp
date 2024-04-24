@@ -19,23 +19,23 @@ const TopBar = () => {
   return (
     <div className="topbar">
       <Link href="/chats">
-        <img src="/assets/guft-gu.png" alt="logo" className="logo" />
+        <img src="/assets/logo.png" alt="logo" className="logo" />
       </Link>
 
       <div className="menu">
         <Link
           href="/chats"
           className={`${
-            pathname === "/chats" ? "text-red-1" : ""
-          } text-heading4-bold`}
+            pathname === "/chats" ? "bold-h-c" : ""
+          } bold-h`}
         >
           Chats
         </Link>
         <Link
           href="/contacts"
           className={`${
-            pathname === "/contacts" ? "text-red-1" : ""
-          } text-heading4-bold`}
+            pathname === "/contacts" ? "bold-h-c" : ""
+          } bold-h`}
         >
           Contacts
         </Link>

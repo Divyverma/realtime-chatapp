@@ -128,7 +128,7 @@
 }
 
 .contact-list {
-  @apply h-screen w-1/2 max-lg:w-full flex flex-col gap-5 bg-white rounded-3xl py-5 px-8 mb-20;
+  @apply h-screen w-1/2 max-lg:w-full flex flex-col gap-5 bg-white rounded-3xl py-5 px-8;
 }
 
 .contact {
@@ -136,15 +136,19 @@
 }
 
 .create-chat {
-  @apply w-1/2 max-lg:w-full flex flex-col gap-7;
+  @apply w-1/2 max-lg:w-full flex flex-col gap-7 mb-32;
 }
 
 .input-group-name {
   @apply bg-white rounded-2xl px-5 py-3 outline-none ;
 }
 
+.contact-wrap{
+  @apply flex flex-wrap gap-3;
+}
+
 .selected-contact {
-  @apply text-base-bold p-2 bg-pink-1 rounded-lg;
+  @apply text-base-bold p-2  bg-pink-1 rounded-lg;
 }
 
 /* ChatDetails */
@@ -157,6 +161,10 @@
   @apply flex items-center gap-4 px-8 py-3 text-body-bold;
 }
 
+.chat-head{
+  @apply flex items-center gap-2 px-4 py-1 text-body-bold;
+}
+
 /* Chat Body */
 .chat-body {
   @apply flex-1 flex flex-col gap-5 bg-grey-2 p-5 overflow-y-scroll custom-scrollbar;
@@ -164,6 +172,25 @@
 
 .message-box {
   @apply flex gap-3 items-start;
+}
+.message-box-1{
+  @apply flex gap-3 items-start justify-end;
+}
+
+.message-info-1{
+  @apply flex flex-col gap-2 items-end;
+}
+
+.chat-1{
+  @apply flex flex-col gap-1;
+}
+
+.chat-name{
+  @apply text-base-bold;
+}
+
+.last-chat{
+ @apply text-small-bold;
 }
 
 .message-profilePhoto {
@@ -202,4 +229,49 @@
 /* BottomBar */
 .bottombar {
   @apply bottom-0 sticky px-10 py-5 flex items-center justify-between sm:hidden;
+}
+
+.last-mes{
+  @apply text-small-medium text-grey-3 ;
+}
+
+.last-mes-1{
+  @apply text-small-bold;
+}
+
+/* loader */
+.loader1{
+  @apply flex items-center justify-center h-screen
+}
+
+.loader2{
+  @apply animate-spin rounded-full border-t-4 border-blue-500 border-solid h-12 w-12;
+}
+
+.bold-h{
+  @apply text-heading4-bold;
+}
+
+.bold-h-c{
+  @apply text-red-1;
+}
+
+.list{
+  @apply flex flex-col flex-1 gap-5 overflow-y-scroll custom-scrollbar text-body-bold;
+}
+
+.new{
+  @apply flex flex-col gap-3;
+}
+
+.chat-text{
+  @apply w-1/3 max-lg:hidden;
+}
+
+.chat-text-1{
+  @apply w-2/3 max-lg:w-full;
+}
+
+.u-div{
+  @apply pb-20;
 }
